@@ -1,0 +1,35 @@
+{
+  "name": "milespong/dynamic-horizon",
+  "description": "A dynamic queue implementation based on Laravel Horizon",
+  "type": "library",
+  "keywords": [
+    "laravel",
+    "queue",
+    "laravel-horizon"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Miles Pong",
+      "email": "mingpeng16@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=7.1.0",
+    "laravel/horizon": "^3.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "MilesPong\\Horizon\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MilesPong\\Horizon\\DynamicHorizonServiceProvider"
+      ]
+    }
+  }
+}
