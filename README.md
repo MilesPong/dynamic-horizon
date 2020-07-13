@@ -29,7 +29,7 @@ Laravel 5.5+ uses Package Auto-Discovery, so doesn't require you to manually add
 Publish the config file `dynamic-horizon.php`  
   
 ```php  
-php artisan vendor:publish --provider="MilesPong\Horizon\DynamicHorizonSupervisor" --tag=config  
+php artisan vendor:publish --provider="MilesPong\Horizon\DynamicHorizonServiceProvider" --tag=config
 ```
 
 Set a value `HORIZON_MASTER_ID` in `.env` to indicate a identifier for current horizon master supervisor  
